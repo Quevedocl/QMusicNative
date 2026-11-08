@@ -21,7 +21,8 @@ jobs:
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build
       - name: Empaquetar .ipa
         run: |
-          mkdir Payload && cp -R build/Build/Products/Release-iphoneos/QMusic.app Payload/
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/QMusic.app Payload/
           zip -qr QMusic.ipa Payload
       - uses: actions/upload-artifact@v4
         with:

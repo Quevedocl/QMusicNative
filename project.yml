@@ -1,0 +1,28 @@
+name: QMusic
+options:
+  bundleIdPrefix: com.qmusic
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  QMusic:
+    type: application
+    platform: iOS
+    sources: [QMusic]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.qmusic.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: QMusic/Info.plist
+      properties:
+        CFBundleDisplayName: Q-Music
+        LSRequiresIPhoneOS: true
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UIBackgroundModes: [audio]
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIViewControllerBasedStatusBarAppearance: true

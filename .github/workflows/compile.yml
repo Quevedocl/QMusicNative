@@ -7,7 +7,7 @@ on:
         required: true
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
       - name: Poner la URL de la app
@@ -28,4 +28,3 @@ jobs:
         with:
           name: QMusic-ipa
           path: QMusic.ipa
-#ok
